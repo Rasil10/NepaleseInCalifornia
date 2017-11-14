@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_find_place"
+            android:icon="@mipmap/find_place_icon"
+            android:title="Find Places" />
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@mipmap/news_icon"
+            android:title="News" />
+        <item
+            android:id="@+id/nav_events"
+            android:icon="@mipmap/events_icon"
+            android:title="Events" />
+        <item
+            android:id="@+id/nav_ecard"
+            android:icon="@mipmap/ecard_icon"
+            android:title="Ecard" />
+        <item
+            android:id="@+id/nav_currency_converter"
+            android:icon="@mipmap/curreny_converter_icon"
+            android:title="Currency Converter" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@mipmap/logout_icon"
+            android:title="Logout" />
+    </group>
+
+
+</menu>

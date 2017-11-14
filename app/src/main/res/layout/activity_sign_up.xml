@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    tools:context="sunbidemo.nepaleseincalifornia.SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/takeMyInformationTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="4dp"
+                android:fontFamily="@font/corbel"
+                android:layout_marginTop="32dp"
+                android:text="Take My Information"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/categoryRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/takeMyInformationTextView"
+                android:layout_marginBottom="24dp"
+                android:layout_marginLeft="4dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/publicRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/corbel"
+                    android:paddingRight="64dp"
+                    android:text="Public" />
+
+                <RadioButton
+                    android:id="@+id/privateRadioButton"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/corbel"
+                    android:layout_height="wrap_content"
+                    android:text="Private" />
+            </RadioGroup>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fullnameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editTextHeight"
+                android:layout_below="@+id/categoryRadioGroup"
+                android:layout_marginBottom="24dp"
+                android:background="@color/lightGrey"
+                android:textColorHint="@color/grey">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/fullNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Full Name"
+                    android:fontFamily="@font/corbel"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="16dp"
+                    android:textColor="@color/grey"
+                    android:textColorHint="@color/grey"
+                    android:textSize="@dimen/signup_text_size" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/emailAddressLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editTextHeight"
+                android:layout_below="@id/fullnameLayout"
+                android:layout_marginBottom="24dp"
+                android:background="@color/lightGrey"
+                android:textColorHint="@color/grey">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/emailAddressEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Email Address"
+                    android:fontFamily="@font/corbel"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="16dp"
+                    android:textColor="@color/grey"
+                    android:textColorHint="@color/grey"
+                    android:textSize="@dimen/signup_text_size" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/addressLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editTextHeight"
+                android:layout_below="@id/emailAddressLayout"
+                android:layout_marginBottom="24dp"
+                android:background="@color/lightGrey"
+                android:textColorHint="@color/grey">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/addressEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Address"
+                    android:fontFamily="@font/corbel"
+                    android:inputType="text"
+                    android:paddingLeft="16dp"
+                    android:textColor="@color/grey"
+                    android:textColorHint="@color/grey"
+                    android:textSize="@dimen/signup_text_size" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/contactLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editTextHeight"
+                android:layout_below="@+id/addressLayout"
+                android:layout_marginBottom="24dp"
+                android:background="@color/lightGrey"
+                android:textColorHint="@color/grey">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/contactEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Contact Number"
+                    android:fontFamily="@font/corbel"
+                    android:inputType="phone"
+                    android:paddingLeft="16dp"
+                    android:textColor="@color/grey"
+                    android:textColorHint="@color/grey"
+                    android:textSize="@dimen/signup_text_size" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/passwordLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editTextHeight"
+                android:layout_below="@+id/contactLayout"
+                android:layout_marginBottom="24dp"
+                android:background="@color/lightGrey"
+                android:textColorHint="@color/grey">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/passwordEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:fontFamily="@font/corbel"
+                    android:paddingLeft="16dp"
+                    android:textColor="@color/grey"
+                    android:textColorHint="@color/grey"
+                    android:textSize="@dimen/signup_text_size" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/confirmPasswordLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editTextHeight"
+                android:layout_below="@id/passwordLayout"
+                android:layout_marginBottom="24dp"
+                android:background="@color/lightGrey"
+                android:textColorHint="@color/grey">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/passwordConfirmEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:fontFamily="@font/corbel"
+                    android:paddingLeft="16dp"
+                    android:textColor="@color/grey"
+                    android:textColorHint="@color/grey"
+                    android:textSize="@dimen/signup_text_size" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/SignUpButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/confirmPasswordLayout"
+                android:background="@color/redSoft"
+                android:fontFamily="@font/corbel"
+                android:text="Signup"
+                android:textAllCaps="false"
+                android:textColor="@color/lightWhite"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".1"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:padding="4dp">
+
+            <ImageView
+                android:id="@+id/facebookIconImageView"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_weight=".16"
+                android:padding="8dp"
+                android:src="@drawable/facebook_icon" />
+
+            <ImageView
+                android:id="@+id/googleIconImageView"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_weight=".16"
+                android:padding="8dp"
+                android:src="@drawable/google_icon" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".16"
+                android:fontFamily="@font/corbel"
+                android:padding="8dp"
+                android:text="or"
+                android:textColor="@color/lightWhite"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:background="@color/redSoft"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:fontFamily="@font/corbel"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

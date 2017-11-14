@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/mapToolbar"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="@dimen/toolbar_height">
+        <ImageView
+
+            android:src="@drawable/map_activity_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mapActivityBackButton"/>
+
+        <TextView
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:fontFamily="@font/corbel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Find A Location."/>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/redSoft"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="8dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:fontFamily="@font/corbel"
+            android:layout_height="wrap_content"
+            android:layout_weight=".9"
+            android:background="@color/redSoft"
+            android:hint="Type Location or Places." />
+
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="24dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:layout_margin="4dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:background="@drawable/placeholder"
+            android:onClick="onMapSearch"
+             />
+
+    </LinearLayout>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.viralandroid.googlemapsandroidapi.MapsActivity" />
+
+</LinearLayout>

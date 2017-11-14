@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight=".85"
+        android:layout_height="match_parent"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:text="ABCDEF"
+        android:fontFamily="@font/corbel"
+        android:textStyle="bold"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:textColor="@color/white"
+        android:id="@+id/drawerItemTextView"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight=".15"
+        android:paddingRight="16dp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="match_parent"
+        android:src="@drawable/restaurant_icon"
+        android:id="@+id/drawerItemImageView"/>
+
+</LinearLayout>

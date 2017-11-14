@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/redSoft"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingTop="36dp"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    tools:context="sunbidemo.nepaleseincalifornia.LoginActivity">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/etEmailLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/editTextHeight"
+        android:layout_marginBottom="32dp"
+        android:background="@color/lightGrey"
+        android:textColorHint="@color/grey">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/lightGrey"
+            android:hint="Email"
+            android:fontFamily="@font/corbel"
+            android:paddingLeft="16dp"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/grey" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/etPasswordLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/editTextHeight"
+        android:layout_marginBottom="32dp"
+        android:background="@color/lightGrey"
+        android:textColorHint="@color/grey"
+        app:passwordToggleEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/lightGrey"
+            android:paddingLeft="16dp"
+            android:fontFamily="@font/corbel"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@color/grey" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:background="@color/colorPrimary"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:fontFamily="@font/corbel"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/forgetPasswordTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/forgetPassword"
+        android:fontFamily="@font/corbel"
+        android:textAlignment="center" />
+
+</LinearLayout>

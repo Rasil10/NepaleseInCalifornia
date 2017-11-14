@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/welcome_three_background_color">
+    <ImageView
+        android:paddingTop="48dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:src="@drawable/welcome_three_icon"/>
+    <TextView
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:fontFamily="@font/corbel"
+        android:textColor="@color/lightWhite"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:text="@string/welcome_three_text"/>
+
+
+
+</LinearLayout>
